@@ -29,9 +29,9 @@ public class PHNatura
         babyHeatscarMaximum = config.get("Mob Changes", "Maximum Baby Heatscar Spiders on Spider Death", 4).getInt(4);
         if (babyHeatscarMaximum < 0)
             babyHeatscarMaximum = 0;
-        spawnNitroCreepers = config.get("Mob Changes", "Spawn Nitro Creepers T/F?", false).getBoolean(false);
+        spawnNitroCreepers = config.get("Mob Changes", "Spawn Nitro Creepers T/F?", true).getBoolean(true);
         spawnHeatscarSpiders = config.get("Mob Changes", "Spawn Heatscar Spiders T/F?", true).getBoolean(true);
-        spawnImps = config.get("Mob Changes", "Spawn Impos T/F?", true).getBoolean(true);
+        spawnImps = config.get("Mob Changes", "Spawn Imps T/F?", true).getBoolean(true);
         
         overrideNether = config.get("Disabler", "Override Nether", !BoP).getBoolean(!BoP);
         canRespawnInNether = config.get("Disabler", "Obelisks let players respawn in the Nether", true).getBoolean(true);
